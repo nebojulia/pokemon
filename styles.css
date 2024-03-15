@@ -76,7 +76,7 @@ body {
 	/* min-width: 152px; */
 	/* min-height: 152px; */
 	box-sizing: border-box;
-	max-width: fit-content;
+	max-width: 304px;
 }
 
 .tile_num {
