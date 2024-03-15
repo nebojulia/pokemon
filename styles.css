@@ -68,17 +68,19 @@ body {
 }
 
 .tile_miniature {
-	
+    display: flex;
+	/* justify-content: center; */
 	background: var(--monochrome-700);
 	border-radius: 8px;
 	padding: 16px;
 	/* min-width: 152px; */
 	/* min-height: 152px; */
 	box-sizing: border-box;
+	max-width: fit-content;
 }
 
 .tile_num {
-	/* position: absolute; */
+	position: absolute;
 	font-family: var(--font-family);
 	font-size: 8px;
 	line-height: 1;
