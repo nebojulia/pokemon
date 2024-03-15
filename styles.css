@@ -47,6 +47,20 @@ body {
 	background: var(--monochrome-600);
 }
 
+.tile:hover {
+	border-top: 1px solid var(--monochrome-400);
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05), 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+	background: var(--monochrome-500);
+}
+
+.tile:hover .data_item {
+	border: 1px solid var(--monochrome-400);
+}
+
+.tile:hover .data_item__img {
+	border-bottom: 1px solid var(--monochrome-400);
+}
+
 .tile_miniature {
 	display: flex;
 	align-self: center;
