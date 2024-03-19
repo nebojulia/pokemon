@@ -49,6 +49,8 @@ body {
 	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
 	display: flex;
 	flex-direction: column;
+	margin: auto;
+	max-width: 320px;
 }
 
 .tile:hover {
@@ -78,6 +80,7 @@ body {
 	/* min-height: 152px; */
 	box-sizing: border-box;
 	max-width: 304px;
+	margin: auto;
 }
 
 .tile_num {
@@ -97,10 +100,11 @@ body {
 
 .tile_info {
 	display: flex;
-	width: 100%;
+	/* width: 100%; */
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 0 8px;
 }
 
 .tile_info-header {
