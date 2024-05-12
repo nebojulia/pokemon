@@ -4,52 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Pokemon Store</title>
 </head>
 <body>
     <div class="tabs">
-        <button class="tabs__button">Pockemons</button>
-        <button class="tabs__button">Fight</button>
+        <button class="tabs__link">Pockemons</button>
+        <button class="tabs__link">Fight</button>
     </div>
-    <a class="tile" href="#">
-        <div class="tile__thumb">
-            <span class="tile__num">001</span>
-            <img class="tile__img" src="./img/pokemons/bulbasaur.png" alt="bulbasaur">
+    <div>
+        <div class="tiles-grid tabs__content">
+            <a class="tile" href="#">
+                <div class="tile__thumb">
+                    <span class="tile__num">001</span>
+                    <img class="tile__img" src="./img/pokemons/bulbasaur.png" alt="bulbasaur">
+                </div>
+                <div class="tile__info">
+                    <header class="tile__header">
+                        <h1 class="tile__title">title</h1>
+                        <div class="tile__types">
+                            <img class="tile__type-icon" src="./img/svg/icon__type--poison.svg" alt="poison">
+                            <img class="tile__type-icon" src="./img/svg/icon__type--grass.svg" alt="grass">
+                        </div>
+                    </header>
+                    <div class="tile__table">
+                        <div class="tile__cell">
+                            <div class="tile__cell-key">
+                                <img class="tile__cell-icon" src="./img/svg/icon__param--health.svg" alt="health">
+                            </div>
+                            <div class="tile__cell-value">00</div>
+                        </div>
+                        <div class="tile__cell">
+                            <div class="tile__cell-key">
+                                <img class="tile__cell-icon" src="./img/svg/icon__param--speed.svg" alt="speed">
+                            </div>
+                            <div class="tile__cell-value">00</div>
+                        </div>
+                        <div class="tile__cell">
+                            <div class="tile__cell-key">
+                                <img class="tile__cell-icon" src="./img/svg/icon__param--attack.svg" alt="attack">
+                            </div>
+                            <div class="tile__cell-value">00 / 00</div>
+                        </div>
+                        <div class="tile__cell">
+                            <div class="tile__cell-key">
+                                <img class="tile__cell-icon" src="./img/svg/icon__param--defence.svg" alt="defence">
+                            </div>
+                            <div class="tile__cell-value">00 / 00</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="tile" href="#">
+                <div class="tile__thumb">
+                    <span class="tile__num">001</span>
+                    <img class="tile__img" src="./img/pokemons/ivysaur.png" alt="ivysaur">
+                </div>
+                <div class="tile__info">
+                    <header class="tile__header">
+                        <h1 class="tile__title">title</h1>
+                        <div class="tile__types">
+                            <img class="tile__type-icon" src="./img/svg/icon__type--poison.svg" alt="poison">
+                            <img class="tile__type-icon" src="./img/svg/icon__type--grass.svg" alt="grass">
+                        </div>
+                    </header>
+                    <div class="tile__table">
+                        <div class="tile__cell">
+                            <div class="tile__cell-key">
+                                <img class="tile__cell-icon" src="./img/svg/icon__param--health.svg" alt="health">
+                            </div>
+                            <div class="tile__cell-value">00</div>
+                        </div>
+                        <div class="tile__cell">
+                            <div class="tile__cell-key">
+                                <img class="tile__cell-icon" src="./img/svg/icon__param--speed.svg" alt="speed">
+                            </div>
+                            <div class="tile__cell-value">00</div>
+                        </div>
+                        <div class="tile__cell">
+                            <div class="tile__cell-key">
+                                <img class="tile__cell-icon" src="./img/svg/icon__param--attack.svg" alt="attack">
+                            </div>
+                            <div class="tile__cell-value">00 / 00</div>
+                        </div>
+                        <div class="tile__cell">
+                            <div class="tile__cell-key">
+                                <img class="tile__cell-icon" src="./img/svg/icon__param--defence.svg" alt="defence">
+                            </div>
+                            <div class="tile__cell-value">00 / 00</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="tile__info">
-            <header class="tile__header">
-                <h1 class="tile__title">title</h1>
-                <div class="tile__types">
-                    <img class="tile__type-icon" src="./img/svg/icon__type--poison.svg" alt="poison">
-                    <img class="tile__type-icon" src="./img/svg/icon__type--grass.svg" alt="grass">
-                </div>
-            </header>
-            <div class="tile__table">
-                <div class="tile__cell">
-                    <div class="tile__cell-key">
-                        <img class="tile__cell-icon" src="./img/svg/icon__param--health.svg" alt="health">
-                    </div>
-                    <div class="tile__cell-value">00</div>
-                </div>
-                <div class="tile__cell">
-                    <div class="tile__cell-key">
-                        <img class="tile__cell-icon" src="./img/svg/icon__param--speed.svg" alt="speed">
-                    </div>
-                    <div class="tile__cell-value">00</div>
-                </div>
-                <div class="tile__cell">
-                    <div class="tile__cell-key">
-                        <img class="tile__cell-icon" src="./img/svg/icon__param--attack.svg" alt="attack">
-                    </div>
-                    <div class="tile__cell-value">00 / 00</div>
-                </div>
-                <div class="tile__cell">
-                    <div class="tile__cell-key">
-                        <img class="tile__cell-icon" src="./img/svg/icon__param--defence.svg" alt="defence">
-                    </div>
-                    <div class="tile__cell-value">00 / 00</div>
-                </div>
-            </div>
-        </div>
+    </div>
 </body>
 </html>
