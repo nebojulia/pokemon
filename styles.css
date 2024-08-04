@@ -154,6 +154,9 @@ body {
 }
 
 .settings__type-num {
+	align-items: center;
+    display: flex;
+    justify-content: center;
 	border: 1px solid var(--monochrome-400);
 	border-radius: 8px;
 	padding: 8px;
@@ -174,6 +177,7 @@ body {
 	grid-template-columns: 1fr 1fr;
 	gap: 8px;
 	width: 100%;
+	margin-bottom: 48px;
 }
 
 .tile {
@@ -306,6 +310,9 @@ body {
 }
 
 @media (min-width: 768px) {
+	body{
+		margin: 0 20px;
+	}
 	.tile {
 		gap: 16px;
 		padding: 8px 8px 16px;
@@ -384,5 +391,11 @@ body {
 		display: flex;
 		flex-direction: column;
 		min-width: 250px;
+	}
+}
+
+@media (min-width: 1280px) {
+	body{
+		margin: 0 120px;
 	}
 }
