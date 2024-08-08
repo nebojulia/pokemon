@@ -1,0 +1,50 @@
+:root {
+    --monochrome-100: #e8e9e9;
+	--monochrome-200: #cdcecf;
+	--monochrome-300: #9b9c9e;
+	--monochrome-400: #686b6e;
+	--monochrome-500: #363a3d;
+	--monochrome-600: #1a1d21;
+	--monochrome-700: #131619;
+	--monochrome-700-blur: rgba(19, 22, 25, 0.7);
+	--monochrome-800: #0d0f10;
+	--monochrome-900: #060708;
+	--color-red: #eb5757;
+	--color-orange: #f2994a;
+	--color-yellow: #f2c94c;
+	--color-green-100: #6fcf97;
+	--color-green-200: #27ae60;
+	--color-green-300: #219653;
+	--color-blue-100: #56ccf2;
+	--color-blue-200: #2d9cdb;
+	--color-blue-300: #2f80ed;
+	--color-violet-100: #bb6bd9;
+	--color-violet-200: #9b51e0;
+
+	--drop-shadow-10p: rgba(0 0 0 / 10%);
+	--drop-shadow-5p: rgba(0 0 0 / 5%);  
+
+	--transition-default: ease 0.25s;
+
+    --font-family: "Mochiy Pop One", sans-serif;
+
+	/*semantic*/
+
+	--front-primary: var(--monochrome-700);
+	--front-secondary: var(--monochrome-500);
+	--front-tertiary: var(--monochrome-400);
+
+	--back-primary: var(--monochrome-600);
+	--back-secondary: var(--monochrome-900);
+
+	--text-primary: var(--monochrome-200);
+	--text-secondary: var(--monochrome-500);
+}
+
+@font-face {
+    font-family: 'Mochiy Pop One';
+    src: url(../fonts/MochiyPopOne-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
