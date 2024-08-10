@@ -127,7 +127,7 @@
 	letter-spacing: 0.05em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $screen-ti) {
 	.tile {
 		gap: 16px;
 		padding: 8px 8px 16px;

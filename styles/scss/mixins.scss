@@ -1,0 +1,18 @@
+@mixin button-primary($padding: 4px, 
+                        $bg: var(--back-primary), 
+                        $br:20px, 
+                        $color: var(--text-primary)) {
+    padding: $padding;
+    background: $bg;
+    border-radius: $br;
+    color: $color;
+}
+@mixin button-hover($padding: 4px, 
+                    $bg: var(--front-tertiary), 
+                    $br:20px, 
+                    $color: var(--text-primary)) {
+    padding: $padding;
+    background: $bg;
+    border-radius: $br;
+    color: $color;
+}

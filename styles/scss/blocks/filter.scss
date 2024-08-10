@@ -1,0 +1,117 @@
+.filter-button {
+	border: none;
+    background: transparent;
+	position: absolute;
+	bottom: 24px;
+	left: 12px;
+	width: 48px;
+	height: 48px;
+}
+
+.filter {
+	display: none;
+}
+
+.filter__tiles-num {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+	background: var(--monochrome-800);
+	border-radius: 16px;
+	padding: 8px 8px 8px 16px;
+	width: 354px;
+	height: 56px;
+}
+
+.filter__num-button {
+	@include button-primary (8px 4px, var(--monochrome-600), 8px, var(--monochrome-100));
+	border: none;
+	border-top: 1px solid var(--monochrome-400);
+	width: 40px;
+	height: 40px;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+}
+
+.filter__num-button:hover {
+	border-top: 1px solid var(--monochrome-300);
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+	background: var(--monochrome-400);
+}
+
+.filter__num-button:active {
+	border-top: 1px solid var(--monochrome-400);
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+	background: var(--monochrome-500);
+}
+
+.filter_types {
+	display: flex;
+    flex-direction: column;
+	background: var(--monochrome-800);
+	border-radius: 16px;
+	padding: 8px;
+	width: 354px;
+	height: 812px;
+	gap: 2px;
+}
+
+.filter__type-wrap {
+	border-radius: 8px;
+	padding: 6px 6px 6px 16px;
+	height: 40px;
+}
+
+.filter__type-wrap:hover {
+	border-top: 1px solid var(--monochrome-300);
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+	background: var(--monochrome-400);
+}
+
+.filter__type-wrap:active {
+	border-top: 1px solid var(--monochrome-400);
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+	background: var(--monochrome-500);
+}
+
+.filter__left {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.filter__type {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.filter__type-num {
+	align-items: center;
+    display: flex;
+    justify-content: center;
+	border: 1px solid var(--monochrome-500);
+	border-radius: 8px;
+	padding: 8px;
+	height: 28px;
+	font-size: 10px;
+	width: 48px;
+	margin: 0;
+	color: var(--monochrome-400);
+}
+
+@media (min-width: $screen-ti) {
+	.filter {
+		display: flex;
+		flex-direction: column;
+		min-width: 250px;
+		gap: 16px;
+	}
+
+	.filter-button {
+		display: none;
+	}
+}

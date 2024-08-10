@@ -1,6 +1,6 @@
 :root {
-    --monochrome-100: #e8e9e9;
 	--monochrome-200: #cdcecf;
+	--monochrome-100: #e8e9e9;
 	--monochrome-300: #9b9c9e;
 	--monochrome-400: #686b6e;
 	--monochrome-500: #363a3d;
@@ -39,12 +39,4 @@
 
 	--text-primary: var(--monochrome-200);
 	--text-secondary: var(--monochrome-500);
-}
-
-@font-face {
-    font-family: 'Mochiy Pop One';
-    src: url(../fonts/MochiyPopOne-Regular.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
 }

@@ -10,20 +10,24 @@
 }
 
 .tabs__link {
+	@include button-primary (16px, var(--monochrome-700), 16px, var(--monochrome-100));
 	width: 100%;
+	border: none;
 	border-top: 1px solid var(--monochrome-500);
-	border-radius: 16px;
-	padding: 16px;
-	background: var(--monochrome-700);
 	font-family: var(--font-family);
 	font-size: 12px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	text-align: center;
-	color: var(--monochrome-100);
 	min-width: 152px;
 }
 
 .tabs__link:hover {
-	background-color: var(--monochrome-500);
+	background: var(--monochrome-400);
+	border-top: 1px solid var(--monochrome-300);
+}
+
+.tabs__link:active {
+	background: var(--monochrome-500);
+	border-top: 1px solid var(--monochrome-400);
 }
