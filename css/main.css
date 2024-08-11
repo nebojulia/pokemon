@@ -221,6 +221,7 @@ body {
     width: 354px;
     gap: 16px;
     position: static;
+    background: transparent;
   }
   .filter-button {
     display: none;
