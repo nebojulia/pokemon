@@ -1,6 +1,6 @@
 .filter-button {
     background: transparent;
-	position: absolute;
+	position: fixed;
 	bottom: 24px;
 	left: 12px;
 	width: 48px;
@@ -9,10 +9,21 @@
 	border: 1px solid var(--color-blue-300);
 	padding: 12px;
 	backdrop-filter: blur(8px);
+	z-index: 5;
 }
 
 .filter {
-	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 280px;
+	background: var(--monochrome-600);
+	padding: 8px 8px 88px 8px;
+	height: 960px;
+	gap: 4px;
+	display: flex;
+	flex-direction: column;
 }
 
 .filter__tiles-num {
@@ -22,7 +33,6 @@
 	background: var(--monochrome-800);
 	border-radius: 16px;
 	padding: 8px 8px 8px 16px;
-	width: 354px;
 	height: 56px;
 }
 
@@ -57,7 +67,6 @@
 	background: var(--monochrome-800);
 	border-radius: 16px;
 	padding: 8px;
-	width: 354px;
 	height: 812px;
 	gap: 2px;
 }
@@ -122,11 +131,12 @@
 	.filter {
 		display: flex;
 		flex-direction: column;
-		min-width: 250px;
+		width: 354px;
 		gap: 16px;
+		position: static;
 	}
 
 	.filter-button {
-		// display: none;
+		display: none;
 	}
 }
