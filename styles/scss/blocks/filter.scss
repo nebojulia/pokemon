@@ -14,7 +14,7 @@
 
 .filter {
 	position: absolute;
-	left: 0;
+	left: -280px;
 	top: 0;
 	z-index: 1;
 	width: 280px;
@@ -24,6 +24,10 @@
 	gap: 4px;
 	display: flex;
 	flex-direction: column;
+	transition: transform .5s;
+}
+.container.open .filter {
+	transform: translateX(100%);
 }
 
 .filter__tiles-num {
