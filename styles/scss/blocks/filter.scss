@@ -141,6 +141,11 @@
 		background: transparent;
 	}
 
+	.container.open .filter {
+		transform: none;
+		transition: none;
+	}
+
 	.filter-button {
 		display: none;
 	}
