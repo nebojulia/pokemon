@@ -62,14 +62,26 @@ body {
   height: auto;
 }
 
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tumbler {
+  position: fixed;
+  margin: 12px 16px;
+}
+
 .container {
   width: 100%;
-  margin: 0 16px;
 }
 
 @media (min-width: 768px) {
-  .container {
-    margin: 0 20px;
+  .tumbler {
+    position: static;
+    width: 100%;
+    z-index: 10;
   }
 }
 @media (min-width: 1280px) {
@@ -239,11 +251,12 @@ body {
   justify-content: center;
   gap: 8px;
   width: 100%;
-  margin: 12px 0;
+  height: 56px;
+  align-items: center;
 }
 
 .tabs__link {
-  padding: 16px;
+  padding: 8px 16px;
   background: var(--monochrome-700);
   border-radius: 16px;
   color: var(--monochrome-100);
@@ -256,6 +269,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   min-width: 152px;
+  height: 40px;
 }
 
 .tabs__link:hover {

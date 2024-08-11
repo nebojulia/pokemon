@@ -6,11 +6,12 @@
 	justify-content: center;
 	gap: 8px;
 	width: 100%;
-	margin: 12px 0;
+	height: 56px;
+	align-items: center
 }
 
 .tabs__link {
-	@include button-primary (16px, var(--monochrome-700), 16px, var(--monochrome-100));
+	@include button-primary (8px 16px, var(--monochrome-700), 16px, var(--monochrome-100));
 	width: 100%;
 	border: none;
 	border-top: 1px solid var(--monochrome-500);
@@ -20,6 +21,7 @@
 	letter-spacing: 0.02em;
 	text-align: center;
 	min-width: 152px;
+	height: 40px;
 }
 
 .tabs__link:hover {
