@@ -1,0 +1,17 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+}
+html,
+body {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	font-family: "Mochiy Pop One", sans-serif;;
+	background-color: var(--monochrome-700);
+    height: 100%;
+}
