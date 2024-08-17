@@ -11,7 +11,32 @@ body {
 }
 
 body {
-	font-family: "Mochiy Pop One", sans-serif;;
+	font-family: "Mochiy Pop One", sans-serif;
 	background-color: var(--monochrome-700);
     height: 100%;
 }
+
+.container {
+	margin: 0 auto;
+    width: min(calc(100% - 240px), 1488px);
+}
+// @media (min-width: $screen-dl) {
+// 	.container {
+// 		width: min(calc(100% - 160px), 1280px);
+// 	}
+// }
+// @media (min-width: $screen-tl) {
+// 	.container {
+// 		width: min(calc(100% - 100px), 992px);
+// 	}
+// }
+// @media (min-width: $screen-t) {
+// 	.container {
+// 		width: min(calc(100% - 64px), 576px);
+// 	}
+// }
+// @media (min-width: $screen-m) {
+// 	.container {
+// 		width: min(calc(100% - 32px), 328px);
+// 	}
+// }

@@ -50,8 +50,48 @@ body {
   height: 100%;
 }
 
-.tabs__text {
+.container {
+  margin: 0 auto;
+  width: min(100% - 240px, 1488px);
+}
+
+.tabs {
+  border-radius: 24px;
+  padding: 8px;
+  height: 72px;
+  background: var(--monochrome-800);
+}
+
+.tabs__header {
+  display: flex;
+  gap: 8px;
+}
+
+.tabs__trigger {
+  border: none;
+  border-top: 1px solid var(--monochrome-400);
+  border-radius: 16px;
+  padding: 16px;
+  height: 56px;
+  width: 100%;
+  background: var(--monochrome-700);
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
   color: var(--monochrome-100);
+}
+
+.tabs__trigger:hover {
+  background: var(--monochrome-400);
+  border-top: 1px solid var(--monochrome-300);
+}
+
+.tabs__trigger:active {
+  background: var(--monochrome-500);
+  border-top: 1px solid var(--monochrome-400);
 }
 
 /*# sourceMappingURL=main.css.map */
