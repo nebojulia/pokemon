@@ -6,16 +6,9 @@
     transition: transform .5s;
     background: var(--monochrome-600);
     padding: 8px 8px 88px 8px;
-    width: 280px;
     height: 960px;
     backdrop-filter: blur(4px);
-
 }
-// @media (min-width: $screen-t) {
-//     .filter {
-//         display: block;
-//     }
-// }
 @media (min-width: $screen-ti) {
     .filter {
         display: flex;
@@ -74,6 +67,14 @@
     height: 40px;
     background: var(--monochrome-800);
     width: 100%;
+}
+.filter__button:hover {
+    background: var(--monochrome-400);
+    border-top: 1px solid var(--monochrome-300);
+}
+.filter__button:active {
+    background: var(--monochrome-500);
+    border-top: 1px solid var(--monochrome-400);
 }
 .filter__button-title {
     display: flex;
