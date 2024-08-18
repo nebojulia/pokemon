@@ -52,9 +52,29 @@ body {
 
 .container {
   margin: 0 auto;
-  width: min(100% - 240px, 1488px);
+  width: min(100% - 32px, 328px);
 }
 
+@media (min-width: 576px) {
+  .container {
+    width: min(100% - 64px, 576px);
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: min(100% - 100px, 992px);
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: min(100% - 160px, 1280px);
+  }
+}
+@media (min-width: 1680px) {
+  .container {
+    width: min(100% - 240px, 1488px);
+  }
+}
 .tabs {
   border-radius: 24px;
   padding: 8px;
