@@ -1,12 +1,13 @@
 .tabs {
+}
+
+.tabs__header {
+    display: flex;
+    gap: 8px;
     border-radius: 24px;
     padding: 8px;
     height: 72px;
     background: var(--monochrome-800);
-}
-.tabs__header {
-    display: flex;
-    gap: 8px;
 }
 .tabs__trigger {
     border: none;

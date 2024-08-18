@@ -40,3 +40,18 @@ body {
 		width: min(calc(100% - 240px), 1488px);
 	}
 }
+
+.header-wrap {
+	margin-top: 12px;
+}
+
+@media (min-width: $screen-ti) {
+	.header-wrap {
+        margin-top: 32px;
+    }
+}
+@media (min-width: $screen-d) {
+	.header-wrap {
+        margin-top: 80px;
+    }
+}
