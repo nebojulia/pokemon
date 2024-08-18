@@ -1,0 +1,32 @@
+.filter {
+    width: 280px;
+    display: none;
+}
+@media (min-width: $screen-t) {
+    .filter {
+        display: block;
+    }
+}
+@media (min-width: $screen-ti) {
+    .filter {
+        width: 354px;
+    }    
+}
+.filter__header {
+    display: flex;
+    border-radius: 16px;
+    padding: 8px 8px 8px 16px;
+    height: 56px;
+    background: var(--monochrome-800);
+    justify-content: space-between;
+}
+
+.filter__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 115%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--monochrome-100);
+    align-self: center;
+}

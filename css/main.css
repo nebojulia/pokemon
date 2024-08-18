@@ -77,16 +77,19 @@ body {
 }
 .header-wrap {
   margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 @media (min-width: 768px) {
   .header-wrap {
     margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 @media (min-width: 1280px) {
   .header-wrap {
     margin-top: 80px;
+    margin-bottom: 32px;
   }
 }
 .tabs__header {
@@ -121,6 +124,71 @@ body {
 }
 
 .tabs__trigger:active {
+  background: var(--monochrome-500);
+  border-top: 1px solid var(--monochrome-400);
+}
+
+.filter {
+  width: 280px;
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .filter {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .filter {
+    width: 354px;
+  }
+}
+.filter__header {
+  display: flex;
+  border-radius: 16px;
+  padding: 8px 8px 8px 16px;
+  height: 56px;
+  background: var(--monochrome-800);
+  justify-content: space-between;
+}
+
+.filter__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--monochrome-100);
+  align-self: center;
+}
+
+.perPage-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.perPage-button {
+  border: none;
+  border-top: 1px solid var(--monochrome-500);
+  border-radius: 8px;
+  padding: 8px 4px;
+  width: 40px;
+  height: 40px;
+  background: var(--monochrome-600);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--monochrome-100);
+}
+
+.perPage-button:hover {
+  background: var(--monochrome-400);
+  border-top: 1px solid var(--monochrome-300);
+}
+
+.perPage-button:active {
   background: var(--monochrome-500);
   border-top: 1px solid var(--monochrome-400);
 }

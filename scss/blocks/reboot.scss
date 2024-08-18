@@ -43,15 +43,18 @@ body {
 
 .header-wrap {
 	margin-top: 12px;
+	margin-bottom: 12px;
 }
 
 @media (min-width: $screen-ti) {
 	.header-wrap {
         margin-top: 32px;
+		margin-bottom: 32px;
     }
 }
 @media (min-width: $screen-d) {
 	.header-wrap {
         margin-top: 80px;
+		margin-bottom: 32px;
     }
 }
