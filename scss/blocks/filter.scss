@@ -1,17 +1,37 @@
 .filter {
     width: 280px;
-    // display: none;
+    position: absolute;
+    left: -280px;
+    top: 0;
+    transition: transform .5s;
+    background: var(--monochrome-600);
+    padding: 8px 8px 88px 8px;
+    width: 280px;
+    height: 960px;
+    backdrop-filter: blur(4px);
+
 }
-@media (min-width: $screen-t) {
-    .filter {
-        display: block;
-    }
-}
+// @media (min-width: $screen-t) {
+//     .filter {
+//         display: block;
+//     }
+// }
 @media (min-width: $screen-ti) {
     .filter {
+        display: flex;
+        flex-direction: column;
         width: 354px;
-    }    
-}
+        gap: 16px;
+        position: static;
+        background: transparent;
+        z-index: 1;
+    }
+
+    .burger {
+        display: none;
+    }
+}    
+
 .filter__header {
     display: flex;
     border-radius: 16px;
