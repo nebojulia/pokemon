@@ -118,6 +118,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--monochrome-100);
+  transition: 0.2s;
 }
 
 .tabs__trigger:hover {
@@ -214,6 +215,7 @@ body {
 .filter__item:hover {
   background: var(--monochrome-400);
   border-top: 1px solid var(--monochrome-300);
+  transition: 0.2s;
 }
 
 .filter__item:active {
@@ -287,6 +289,7 @@ body {
 .perPage-buttons__item:hover {
   background: var(--monochrome-400);
   border-top: 1px solid var(--monochrome-300);
+  transition: 0.2s;
 }
 
 .perPage-buttons__item:active {

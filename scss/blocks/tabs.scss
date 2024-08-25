@@ -44,6 +44,7 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--monochrome-100);
+    transition: .2s;
 }
 .tabs__trigger:hover {
     background: var(--monochrome-400);
