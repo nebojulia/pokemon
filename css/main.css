@@ -136,17 +136,18 @@ body {
   background: var(--monochrome-600);
   padding: 8px 8px 32px 8px;
   height: 960px;
+  transform: translateX(-100%);
 }
 
 .filter--hidden {
   position: absolute;
-  left: -280px;
+  left: 0;
   top: 0;
   transition: transform 0.5s;
 }
 
 .tabs.open .filter {
-  transform: translateX(100%);
+  transform: translateX(0);
   overflow-y: auto;
   max-height: 100vh;
   backdrop-filter: blur(4px);
