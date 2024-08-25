@@ -1,14 +1,33 @@
 .tabs {
 
 }
-
 .tabs__header {
     display: flex;
     gap: 8px;
-    border-radius: 24px;
-    padding: 8px;
-    height: 72px;
     background: var(--monochrome-800);
+    padding: 8px;
+    border-radius: 24px;
+}
+.tabs__header-wrap {
+    width: 100%;
+	padding: 12px 0;
+	position: sticky;
+	top: 0;
+    backdrop-filter: blur(8px);
+    background: var(--monochrome-700-blur);
+    // height: 80px;
+}
+
+@media (min-width: $screen-ti) {
+    .tabs__header-wrap {
+		padding: 32px 0;
+		z-index: 4;
+    }
+}
+@media (min-width: $screen-d) {
+    .tabs__header-wrap {
+		z-index: 4;
+    }
 }
 .tabs__trigger {
     border: none;

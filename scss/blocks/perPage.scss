@@ -2,7 +2,7 @@
     display: flex;
     gap: 8px;
 }
-.perPage-button {
+.perPage-buttons__item {
     border: none;
     border-top: 1px solid var(--monochrome-500);
     border-radius: 8px;
@@ -17,11 +17,11 @@
     text-align: center;
     color: var(--monochrome-100);
 }
-.perPage-button:hover {
+.perPage-buttons__item:hover {
     background: var(--monochrome-400);
     border-top: 1px solid var(--monochrome-300);
 }
-.perPage-button:active {
+.perPage-buttons__item:active {
     background: var(--monochrome-500);
     border-top: 1px solid var(--monochrome-400);
 }

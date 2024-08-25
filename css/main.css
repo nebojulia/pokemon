@@ -50,10 +50,6 @@ body {
   height: 100%;
 }
 
-.tabs.open .filter {
-  transform: translateX(100%);
-}
-
 .container {
   margin: 0 auto;
   width: min(100% - 32px, 328px);
@@ -79,37 +75,34 @@ body {
     width: min(100% - 240px, 1488px);
   }
 }
-.header-wrap {
-  padding-top: 12px;
-  margin-bottom: 12px;
+.tabs__header {
+  display: flex;
+  gap: 8px;
+  background: var(--monochrome-800);
+  padding: 8px;
+  border-radius: 24px;
+}
+
+.tabs__header-wrap {
+  width: 100%;
+  padding: 12px 0;
   position: sticky;
   top: 0;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
+  background: var(--monochrome-700-blur);
 }
 
 @media (min-width: 768px) {
-  .header-wrap {
-    padding-top: 32px;
-    margin-bottom: 32px;
+  .tabs__header-wrap {
+    padding: 32px 0;
     z-index: 4;
   }
 }
 @media (min-width: 1280px) {
-  .header-wrap {
-    padding-top: 80px;
-    margin-bottom: 32px;
+  .tabs__header-wrap {
     z-index: 4;
   }
 }
-.tabs__header {
-  display: flex;
-  gap: 8px;
-  border-radius: 24px;
-  padding: 8px;
-  height: 72px;
-  background: var(--monochrome-800);
-}
-
 .tabs__trigger {
   border: none;
   border-top: 1px solid var(--monochrome-400);
@@ -139,13 +132,22 @@ body {
 
 .filter {
   width: 280px;
+  background: var(--monochrome-600);
+  padding: 8px 8px 32px 8px;
+  height: 960px;
+}
+
+.filter--hidden {
   position: absolute;
   left: -280px;
   top: 0;
   transition: transform 0.5s;
-  background: var(--monochrome-600);
-  padding: 8px 8px 88px 8px;
-  height: 960px;
+}
+
+.tabs.open .filter {
+  transform: translateX(100%);
+  overflow-y: auto;
+  max-height: 100vh;
   backdrop-filter: blur(4px);
 }
 
@@ -266,7 +268,7 @@ body {
   gap: 8px;
 }
 
-.perPage-button {
+.perPage-buttons__item {
   border: none;
   border-top: 1px solid var(--monochrome-500);
   border-radius: 8px;
@@ -282,12 +284,12 @@ body {
   color: var(--monochrome-100);
 }
 
-.perPage-button:hover {
+.perPage-buttons__item:hover {
   background: var(--monochrome-400);
   border-top: 1px solid var(--monochrome-300);
 }
 
-.perPage-button:active {
+.perPage-buttons__item:active {
   background: var(--monochrome-500);
   border-top: 1px solid var(--monochrome-400);
 }
@@ -300,7 +302,7 @@ body {
   height: 48px;
   backdrop-filter: blur(8px);
   background: var(--monochrome-700-blur);
-  position: absolute;
+  position: fixed;
   bottom: 24px;
   left: 12px;
   z-index: 5;

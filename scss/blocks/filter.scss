@@ -1,12 +1,19 @@
 .filter {
     width: 280px;
+    background: var(--monochrome-600);
+    padding: 8px 8px 32px 8px;
+    height: 960px;
+}
+.filter--hidden {
     position: absolute;
     left: -280px;
     top: 0;
     transition: transform .5s;
-    background: var(--monochrome-600);
-    padding: 8px 8px 88px 8px;
-    height: 960px;
+}
+.tabs.open .filter {
+    transform: translateX(100%);
+	overflow-y: auto;
+    max-height: 100vh;
     backdrop-filter: blur(4px);
 }
 @media (min-width: $screen-ti) {

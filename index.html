@@ -5,28 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
-    <script src="./js/main.js"></script>
 </head>
 <body>
+    <button class="burger" id="burger">
+        <img src="./img/svg/icon__filter-button.svg" alt="burger">
+    </button>
     <div class="tabs" id="tabs">
-        <div class="container">
-            <img class="burger" id="burger" src="./img/svg/icon__filter-button.svg" alt="burger">
-            <div class="header-wrap">
-                <div class="tabs__header">
-                    <button class="tabs__trigger">Pockemons</button>
-                    <button class="tabs__trigger">Fight</button>
-                </div>
+        <div class="tabs__header-wrap">
+            <div class="tabs__header container">
+                <button class="tabs__trigger tabs__trigger--active">Pockemons</button>
+                <button class="tabs__trigger">Fight</button>
             </div>
         </div>
-        <div class="tabs__body">
-            <div class="tabs__content">
-                <div class="filter" id="filter">
+        <div class="tabs__body container">
+            <div class="tabs__content tabs__content--active">
+                <div class="filter filter--hidden" id="filter">
                     <div class="filter__header">
                         <span class="filter__title">Per page:</span>
                         <div class="perPage-buttons">
-                            <button class="perPage-button">12</button>
-                            <button class="perPage-button">24</button>
-                            <button class="perPage-button">48</button>
+                            <button class="perPage-buttons__item">12</button>
+                            <button class="perPage-buttons__item">24</button>
+                            <button class="perPage-buttons__item">48</button>
                         </div>
                     </div>
                     <div class="filter__body">
@@ -50,5 +49,6 @@
             </div>
         </div>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
