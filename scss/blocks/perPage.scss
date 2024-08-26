@@ -1,0 +1,28 @@
+.perPage-buttons {
+    display: flex;
+    gap: 8px;
+}
+.perPage-buttons__item {
+    border: none;
+    border-top: 1px solid var(--monochrome-500);
+    border-radius: 8px;
+    padding: 8px 4px;
+    width: 40px;
+    height: 40px;
+    background: var(--monochrome-600);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--monochrome-100);
+}
+.perPage-buttons__item:hover {
+    background: var(--monochrome-400);
+    border-top: 1px solid var(--monochrome-300);
+    transition: .2s;
+}
+.perPage-buttons__item:active {
+    background: var(--monochrome-500);
+    border-top: 1px solid var(--monochrome-400);
+}

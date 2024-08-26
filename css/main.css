@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "Mochiy Pop One";
+  src: url("../fonts/MochiyPopOne.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --monochrome-100: #e8e9e9;
+  --monochrome-200: #cdcecf;
+  --monochrome-300: #9b9c9e;
+  --monochrome-400: #686b6e;
+  --monochrome-500: #363a3d;
+  --monochrome-600: #1a1d21;
+  --monochrome-700: #131619;
+  --monochrome-700-blur: rgba(19, 22, 25, 0.7);
+  --monochrome-800: #0d0f10;
+  --monochrome-900: #060708;
+  --color-red: #eb5757;
+  --color-orange: #f2994a;
+  --color-yellow: #f2c94c;
+  --color-green-100: #6fcf97;
+  --color-green-200: #27ae60;
+  --color-green-300: #219653;
+  --color-blue-100: #56ccf2;
+  --color-blue-200: #2d9cdb;
+  --color-blue-300: #2f80ed;
+  --color-violet-100: #bb6bd9;
+  --color-violet-200: #9b51e0;
+  --service-component: #9747ff;
+  --font-family: "Mochiy Pop One", sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Mochiy Pop One", sans-serif;
+  background-color: var(--monochrome-700);
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(100% - 32px, 328px);
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: min(100% - 64px, 576px);
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: min(100% - 100px, 992px);
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: min(100% - 160px, 1280px);
+  }
+}
+@media (min-width: 1680px) {
+  .container {
+    width: min(100% - 240px, 1488px);
+  }
+}
+.tabs__header {
+  display: flex;
+  gap: 8px;
+  background: var(--monochrome-800);
+  padding: 8px;
+  border-radius: 24px;
+}
+
+.tabs__header-wrap {
+  width: 100%;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  background: var(--monochrome-700-blur);
+}
+
+@media (min-width: 768px) {
+  .tabs__header-wrap {
+    padding: 32px 0;
+    z-index: 4;
+  }
+}
+@media (min-width: 1280px) {
+  .tabs__header-wrap {
+    z-index: 4;
+  }
+}
+.tabs__trigger {
+  border: none;
+  border-top: 1px solid var(--monochrome-400);
+  border-radius: 16px;
+  padding: 16px;
+  height: 56px;
+  width: 100%;
+  background: var(--monochrome-700);
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--monochrome-100);
+  transition: 0.2s;
+}
+
+.tabs__trigger:hover {
+  background: var(--monochrome-400);
+  border-top: 1px solid var(--monochrome-300);
+}
+
+.tabs__trigger:active {
+  background: var(--monochrome-500);
+  border-top: 1px solid var(--monochrome-400);
+}
+
+.filter {
+  width: 280px;
+  background: var(--monochrome-600);
+  padding: 8px 8px 32px 8px;
+  height: 960px;
+  transform: translateX(-100%);
+}
+
+.filter--hidden {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.5s;
+}
+
+.tabs.open .filter {
+  transform: translateX(0);
+  overflow-y: auto;
+  max-height: 100vh;
+  backdrop-filter: blur(4px);
+}
+
+@media (min-width: 768px) {
+  .filter {
+    display: flex;
+    flex-direction: column;
+    width: 354px;
+    gap: 16px;
+    position: static;
+    background: transparent;
+    z-index: 1;
+  }
+  .burger {
+    display: none;
+  }
+}
+.filter__header {
+  display: flex;
+  border-radius: 16px;
+  padding: 8px 8px 8px 16px;
+  height: 56px;
+  background: var(--monochrome-800);
+  justify-content: space-between;
+}
+
+.filter__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--monochrome-100);
+  align-self: center;
+}
+
+.filter__body {
+  border-radius: 16px;
+  padding: 8px;
+  width: 100%;
+  height: 812px;
+  background: var(--monochrome-800);
+  margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+  .filter__body {
+    margin-top: 16px;
+  }
+}
+.filter__item {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 6px 6px 6px 16px;
+  width: 248px;
+  height: 40px;
+  background: var(--monochrome-800);
+  width: 100%;
+}
+
+.filter__item:hover {
+  background: var(--monochrome-400);
+  border-top: 1px solid var(--monochrome-300);
+  transition: 0.2s;
+}
+
+.filter__item:active {
+  background: var(--monochrome-500);
+  border-top: 1px solid var(--monochrome-400);
+}
+
+.filter__item-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  color: var(--monochrome-100);
+}
+
+.filter__item-name {
+  display: block;
+}
+
+.filter__item-info {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--monochrome-500);
+  border-radius: 8px;
+  padding: 8px;
+  width: 48px;
+  height: 28px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--monochrome-400);
+}
+
+.filter__item:hover .filter__item-info {
+  border: 1px solid var(--monochrome-300);
+  color: var(--monochrome-100);
+}
+
+.filter__item:active .filter__item-info {
+  border: 1px solid var(--monochrome-400);
+  color: var(--monochrome-100);
+}
+
+.perPage-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.perPage-buttons__item {
+  border: none;
+  border-top: 1px solid var(--monochrome-500);
+  border-radius: 8px;
+  padding: 8px 4px;
+  width: 40px;
+  height: 40px;
+  background: var(--monochrome-600);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--monochrome-100);
+}
+
+.perPage-buttons__item:hover {
+  background: var(--monochrome-400);
+  border-top: 1px solid var(--monochrome-300);
+  transition: 0.2s;
+}
+
+.perPage-buttons__item:active {
+  background: var(--monochrome-500);
+  border-top: 1px solid var(--monochrome-400);
+}
+
+.burger {
+  border: 1px solid var(--color-blue-300);
+  border-radius: 24px;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  backdrop-filter: blur(8px);
+  background: var(--monochrome-700-blur);
+  position: fixed;
+  bottom: 24px;
+  left: 12px;
+  z-index: 5;
+}
+
+/*# sourceMappingURL=main.css.map */
